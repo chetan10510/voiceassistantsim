@@ -1,6 +1,3 @@
 [build]
   publish = "."
   command = "echo \"window.env = { GROQ_API_KEY: '$GROQ_API_KEY' };\" > env.js"
-
-[[plugins]]
-  package = "./plugins/create-env"
