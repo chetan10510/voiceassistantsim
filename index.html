@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Voice Assistant Orb</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="voiceOrb"></canvas>
+
+  <div id="status">Tap Start</div>
+  <div id="output" class="output"></div>
+
+  <div class="controls">
+    <div class="left-controls">
+      <button id="copy" class="hidden">📋 Copy</button>
+      <button id="download" class="hidden">💾 Download</button>
+      <button id="clear" class="hidden">🧹 Clear</button>
+    </div>
+    <div class="center-controls">
+      <button id="start">🎙️ Start</button>
+      <button id="stop" disabled>■ Stop</button>
+    </div>
+  </div>
+
+  <!-- env.js will be generated on Netlify -->
+  <script src="env.js"></script>
+  <script src="orb.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
